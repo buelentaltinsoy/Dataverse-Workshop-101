@@ -1,1 +1,1 @@
-# Dataverse-Workshop-101
+# The Dataverse Workshop 101
