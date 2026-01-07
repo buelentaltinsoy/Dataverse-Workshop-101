@@ -22,8 +22,14 @@ Most users use Microsoft Edge or Google Chrome for their daily work. Since you w
 1. Open **Google Chrome**.
 2. Click on the **Profile icon** in the top-right corner.
 3. Click **+ Add** at the bottom of the menu.
+<img width="233" height="246" alt="image" src="https://github.com/user-attachments/assets/e93ee919-cd44-4319-9e34-29ae4795312b" />
+
 4. Select **"Continue without an account"**.
+<img width="752" height="343" alt="image" src="https://github.com/user-attachments/assets/b8d63bea-d9b7-43bc-8d96-a880ed1da2dd" />
+
 5. Name it `Dataverse Workshop` and choose a distinct color.
+<img width="585" height="586" alt="image" src="https://github.com/user-attachments/assets/b0148dc8-db0b-45b8-8753-83c7a9f34de4" />
+
 6. **Benefit:** This profile keeps its own cookies and sessions. You won't have to log out of your work account!
 
 ### Option B: Using Incognito Mode
