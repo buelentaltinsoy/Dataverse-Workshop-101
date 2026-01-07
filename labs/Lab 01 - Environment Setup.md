@@ -1,74 +1,85 @@
-# LAB 1 - Envrionment Setup
+# LAB 1 - Environment Setup 🌐
 
-*Before diving into the technical labs, we’ll make sure that all workshop prerequisites are met and that you have your own working copy of the lab materials. This lab consists of two parts:*
+*Before diving into the technical labs, we’ll make sure that all workshop prerequisites are met and that you have your own working copy of the lab materials. This lab ensures you have a "Clean Room" environment and a properly provisioned Dataverse instance for 2026.*
 
-✅ *Verifying that all required software, services, and environments are set up*
+This lab consists of four parts:
 
-🧬 *Forking and cloning the GitHub repository with lab instructions and resources*
+🧼 **The "Clean Room" Setup**: Isolating your training account.
 
-## ✅ Part 1: Check prerequisites
+🔑 **Account Provisioning**: Getting your Power Apps Developer Plan.
 
-Review the checklist below. You should have completed these steps **before the workshop**. If something is missing, please fix it now or contact your tutor during the break.
+🏗️ **Environment Creation**: Building your Dataverse database.
 
-### 💻 Laptop
+🧬 **Repo Preparation**: Forking the workshop materials.
 
-- [ ] Windows 10/11 or macOS
-- [ ] Admin rights to install software
+---
 
-### ⚙️ Installed Software
+## 🧼 Part 1: Create a "Clean Room" Browser Profile
 
-- [ ] Azure CLI ([Windows](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=msi) | [macOS](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest))
-- [ ] API Playground ([Postman](https://www.postman.com/downloads) | [Insomnia](https://insomnia.rest/))
-- [ ] [Visual Studio Code](https://code.visualstudio.com/)
-- [ ] VS Code Extensions:
+Most users use Microsoft Edge or Google Chrome for their daily work. Since you will be using a **Training/Developer account** today, being logged into your "Work" account in another tab can cause "Session Bleed," leading to permission errors.
 
-  - [ ] Bicep
-  - [ ] Azure CLI Tools
-    
-    ![VS Code Extensions](../../assets/prerequisites-vsc.png)
+### Option A: Create a New Chrome Profile (Recommended)
+1. Open **Google Chrome**.
+2. Click on the **Profile icon** in the top-right corner.
+3. Click **+ Add** at the bottom of the menu.
+4. Select **"Continue without an account"**.
+5. Name it `Dataverse Workshop` and choose a distinct color.
+6. **Benefit:** This profile keeps its own cookies and sessions. You won't have to log out of your work account!
 
-### 🌐 Azure Subscription
+### Option B: Using Incognito Mode
+- If you cannot create a profile, use **Incognito Mode** (`Ctrl + Shift + N`).
+- ⚠️ *Note:* You will have to log in again every time you close the browser.
 
-- [ ] Access to a dedicated Azure subscription
-- [ ] Owner role assigned at subscription level ([instructions](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal-subscription-admin))
-- [ ] Machine Learning quota available (at least 6 **D-** or **E-series** VM cores in **Sweden Central**)
-  ![Quota](../../assets/ml-quotas.png)
+---
 
-  > If needed, register resource providers: `Microsoft.Quota` and `Microsoft.Compute`, and request a quota increase
+## 🔑 Part 2: Obtain your Training License
 
-### 🛡️ Power Platform
+The best way to learn Microsoft Dataverse in 2026 is through the **Power Apps Developer Plan**.
 
-- [ ] Microsoft 365 tenant ([sign up here](https://signup.microsoft.com/get-started/signup?products=91dcd8b1-3b1b-444d-9cdb-0bc0da3eb40d&mproducts=CFQ7TTC0LH18:0002&fmproducts=CFQ7TTC0LH18:0002&culture=en-us&country=us&ali=1))
-- [ ] Power Platform Developer Plan ([get started](https://www.microsoft.com/en-us/power-platform/products/power-apps))
-- [ ] Dataverse-enabled environment ([guide](https://learn.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database))
-- [ ] System Administrator role assigned ([guide](https://learn.microsoft.com/en-us/power-platform/admin/assign-security-roles))
-- [ ] Access to Copilot Studio ([trial guide](https://learn.microsoft.com/en-us/microsoft-copilot-studio/sign-up-individual))
+### 1. Power Apps Developer Plan (Recommended)
+This is the standard for learners. It does not expire as long as you are active.
+*   **Benefits:** 2 GB Dataverse capacity, unlimited apps/flows, and up to 3 environments.
+*   **How to get it:** Sign up with your work or school account at the [Power Apps Developer Plan website](www.microsoft.com).
 
-***
+### 2. Microsoft 365 Developer Program (Alternative)
+*Use this if you do not have a corporate/school email.*
+*   **Benefits:** Provides a free, renewable Microsoft 365 E5 sandbox with 25 licenses.
+*   **How to get it:** Register at the [Microsoft 365 Developer Center](developer.microsoft.com). Use this new identity to then sign up for the Developer Plan above.
 
-## 🧬 Part 2: Fork and Clone the Workshop Repository
+---
+
+## 🏗️ Part 3: Create Your Dataverse Environment
+
+Once you have your credentials, follow these steps to provision your database:
+
+1.  Navigate to the [Power Platform Admin Center](admin.powerplatform.microsoft.com).
+2.  Select **Environments** from the left-side menu and click **+ New**.
+3.  **Choose Type:** Select **Developer** (for personal learning).
+4.  **Add Database:** Ensure you toggle **"Add a Dataverse data store"** to **Yes**. 
+5.  **Configure:** Choose your preferred language and currency, then click **Save**.
+
+### Environment Types Comparison
+| Type       | Best For                               | Expiration                  |
+|------------|----------------------------------------|------------------------------|
+| Developer  | Individual learning                    | Renewable (with activity)    |
+| Sandbox    | Team testing & "Reset" features        | None (uses tenant capacity)  |
+| Trial      | Short-term 30-day testing               | 30 Days                      |
+| Teams      | Basic Dataverse within MS Teams         | Linked to Team lifecycle     |
+
+## 🧬 Part 4: Fork and Clone the Workshop Repository
 
 *Now let’s fork the repository and clone it locally so you can work with lab files in your own environment.*
 
-- Create a folder on your laptop where you'll clone the repository. For example, you can create a folder named `nordic-summit-agent` on your C: drive.
-1. Open the **GitHub repo** in your browser: [https://github.com/Katerina-Chernevskaya/nordic-summit-25-workshop](https://github.com/Katerina-Chernevskaya/nordic-summit-25-workshop)
-2. Click the **Fork** button in the top right corner and create a copy in your own GitHub account.
-3. In your forked repository, click the **Code** button and copy the **Clone URL** (HTTPS).
-![Clone URL](../../assets/0-clone-url.png)
-4. Open **PowerShell** or any terminal of your choice.
-5. Navigate to a working directory where you want to clone the labs using `cd` command. For example:
-   ```
-   cd c:\nordic-summit-agent
-   ```
-6. Clone your forked repo (replace with the URL you copied before):
-   ```
-   git clone https://github.com/<YOUR_CLONE_URL>
-   ```
-7. Once cloned, open the project in Visual Studio Code:
-   ```
-   code .
-   ```
-
-***
-
-✅ You’re now ready to start the workshop!
+1. Open the **Workshop Repo** in your new Browser Profile: `github.com`
+2. Click the **Fork** button in the top right corner to create a copy in your own GitHub account.
+3. Click the green **<> Code** button and copy the **HTTPS URL**.
+4. Open your terminal (PowerShell or Bash) and run:
+   ```bash
+   # Navigate to your folder
+   cd c:\workshops
+   
+   # Clone the repo
+   git clone <YOUR_COPIED_URL>
+   
+   # Open in VS Code
+   code dataverse-beginner-workshop
