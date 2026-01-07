@@ -45,7 +45,7 @@ The best way to learn Microsoft Dataverse in 2026 is through the **Power Apps De
 ### 1. Power Apps Developer Plan (Recommended)
 This is the standard for learners. It does not expire as long as you are active.
 *   **Benefits:** 2 GB Dataverse capacity, unlimited apps/flows, and up to 3 environments.
-*   **How to get it:** Sign up with your work or school account at the [Power Apps Developer Plan website](www.microsoft.com).
+*   **How to get it:** Sign up with your work or school account at the [Power Apps Developer Plan website](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing).
 
 ### 2. Microsoft 365 Developer Program (Alternative)
 *Use this if you do not have a corporate/school email.*
