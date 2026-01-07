@@ -1,4 +1,4 @@
-# LAB 1 - Environment Setup 🌐
+# Lab 1 - Environment Setup 🌐
 
 *Before diving into the technical labs, we’ll make sure that all workshop prerequisites are met and that you have your own working copy of the lab materials. This lab ensures you have a "Clean Room" environment and a properly provisioned Dataverse instance for 2026.*
 
@@ -83,3 +83,14 @@ Once you have your credentials, follow these steps to provision your database:
    
    # Open in VS Code
    code dataverse-beginner-workshop
+
+---
+
+## 💡 Key Learning Outcomes
+*   **Identity Isolation:** You learned how to use Browser Profiles to manage multiple Microsoft 365 identities without conflict.
+*   **Environment Readiness:** You verified that your Dataverse "Sandbox" is provisioned and ready for custom tables.
+
+***
+
+✅ **You’re now ready to start Lab 2: The Data Model!**
+
