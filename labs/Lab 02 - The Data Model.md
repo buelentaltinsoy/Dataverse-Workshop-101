@@ -76,4 +76,3 @@ You have now successfully:
 *   Used **Copilot** to build the **Country** table and populate it with sample data.
 
 *In the next lab, we will manually add more specific columns (Population, Continent) to learn how to refine our AI-generated table!*
-Verwende Code mit Vorsicht.
