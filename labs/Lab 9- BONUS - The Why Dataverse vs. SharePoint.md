@@ -1,4 +1,4 @@
-# LAB 10 - The "Why": Dataverse vs. SharePoint for Copilot 🤖
+# Lab 9 - The "Why": Dataverse vs. SharePoint for Copilot 🤖
 
 *In this final lab, we will explore the architectural differences between a "flat" list and a "relational" database. You will see first-hand why Dataverse is the required foundation for building sophisticated AI Agents in 2026.*
 
