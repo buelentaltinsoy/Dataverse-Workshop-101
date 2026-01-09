@@ -65,5 +65,20 @@ Now we will create a link. In Dataverse, a "Many-to-One" relationship is created
 
 Beginners often confuse these two. Here is the 2026 gold standard for making the right choice:
 
+| Feature       | Choice (Option Set)                              | Lookup (Relationship)                  |
+|------------|----------------------------------------|------------------------------|
+| Usage	  | Small, static lists that rarely change.                    | Dynamic lists or items that need their own details.   |
+| Example    | "Status" (Draft, Published, Archived).       |"Continent" (Needs its own description/map). |
+| Data      | Volume	Best for small sets (< 15 options).	              | Best for large or growing lists.                      |
+| Maintenance      | Requires a developer/maker to change the list.         | Any authorized user can add a new Continent row.    |
+| AI Insight      | Limited to the label name.         | AI can "crawl" through the link to find related facts.     |
 
+## ✅ Summary & Next Steps
 
+You have now successfully:
+*   Created a **Parent Table** (Continent).
+*   Established a **Many-to-One Relationship** using a Lookup column.
+*   Linked **Germany** to **Europe** using relational logic.
+*   Learned the architectural difference between **Choices** and **Lookups**.
+
+*In the next lab, we will look at **Views and Forms** to decide how this data is displayed to the end user!*
