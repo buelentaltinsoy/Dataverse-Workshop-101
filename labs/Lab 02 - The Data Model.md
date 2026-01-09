@@ -1,85 +1,80 @@
-# LAB 1 - Environment Setup 🌐
+# Lab 2 - The Data Model & Solutions 🏗️
 
-*Before diving into the technical labs, we’ll make sure that all workshop prerequisites are met and that you have your own working copy of the lab materials. This lab ensures you have a "Clean Room" environment and a properly provisioned Dataverse instance for 2026.*
+*In this lab, you will establish the foundation of your application. You will create a **Solution** to package your work and define your first **Dataverse Table**. By using a custom prefix based on your name, you ensure your work is unique and follows professional ALM (Application Lifecycle Management) standards for 2026.*
 
-This lab consists of four parts:
+This lab consists of three parts:
 
-🧼 **The "Clean Room" Setup**: Isolating your training account.
+📦 **The Solution Container**: Organizing your components.
 
-🔑 **Account Provisioning**: Getting your Power Apps Developer Plan.
+🆔 **Publisher & Prefix**: Branding your metadata with your name.
 
-🏗️ **Environment Creation**: Building your Dataverse database.
-
-🧬 **Repo Preparation**: Forking the workshop materials.
+🌍 **Table Creation**: Building the "Country" table.
 
 ---
 
-## 🧼 Part 1: Create a "Clean Room" Browser Profile
+## 📦 Part 1: Create a New Solution
 
-Most users use Microsoft Edge or Google Chrome for their daily work. Since you will be using a **Training/Developer account** today, being logged into your "Work" account in another tab can cause "Session Bleed," leading to permission errors.
+In Dataverse, you should never create tables in the "Default" solution. Instead, we use **Solutions** to act as a container for everything we build, making it portable and organized.
 
-### Option A: Create a New Chrome Profile (Recommended)
-1. Open **Google Chrome**.
-2. Click on the **Profile icon** in the top-right corner.
-3. Click **+ Add** at the bottom of the menu.
-4. Select **"Continue without an account"**.
-5. Name it `Dataverse Workshop` and choose a distinct color.
-6. **Benefit:** This profile keeps its own cookies and sessions. You won't have to log out of your work account!
-
-### Option B: Using Incognito Mode
-- If you cannot create a profile, use **Incognito Mode** (`Ctrl + Shift + N`).
-- ⚠️ *Note:* You will have to log in again every time you close the browser.
+1. Navigate to the [Power Apps Maker Portal](https://make.powerapps.com).
+2. **Check your environment:** Look at the top-right corner to ensure you are in the **Developer Environment** you created in Lab 1.
+3. Click on **Solutions** in the left-hand navigation bar.
+4. Click **+ New solution** at the top.
+5. In the side pane, enter the following:
+   * **Display name:** `<YOURNAME>_Demo` (Replace <YOURNAME> by your name, for example: BuelentAltinsoy_Demo
+   * **Name:** (This will be auto-generated, but you can rename as `Workshop2026`)
 
 ---
 
-## 🔑 Part 2: Obtain your Training License
+## 🆔 Part 2: Define your Personal Publisher & Prefix
 
-The best way to learn Microsoft Dataverse in 2026 is through the **Power Apps Developer Plan**.
+The **Publisher** identifies who created the component. The **Prefix** is a unique identifier (2-5 characters) attached to every table and column name to prevent naming conflicts in shared environments.
 
-### 1. Power Apps Developer Plan (Recommended)
-This is the standard for learners. It does not expire as long as you are active.
-*   **Benefits:** 2 GB Dataverse capacity, unlimited apps/flows, and up to 3 environments.
-*   **How to get it:** Sign up with your work or school account at the [Power Apps Developer Plan website](www.microsoft.com).
-
-### 2. Microsoft 365 Developer Program (Alternative)
-*Use this if you do not have a corporate/school email.*
-*   **Benefits:** Provides a free, renewable Microsoft 365 E5 sandbox with 25 licenses.
-*   **How to get it:** Register at the [Microsoft 365 Developer Center](developer.microsoft.com). Use this new identity to then sign up for the Developer Plan above.
+1. In the "New solution" pane, under **Publisher**, click the dropdown and select **+ New publisher**.
+2. **Display name:** Enter your full name (e.g., `Jane Doe`).
+3. **Name:** Enter your name without spaces (e.g., `JaneDoe`).
+4. **Prefix:** Enter your first name or a unique shorthand in lowercase (e.g., `jane`). 
+   * *Look at the preview:* It will show `jane_`. This means your table will be stored as `jane_Country` in the database.
+5. Click **Save**.
+6. Back in the Solution pane, select your new Publisher from the list.
+7. Click **Create**.
 
 ---
 
-## 🏗️ Part 3: Create Your Dataverse Environment
+## 🌍 Part 3: Create the "Country" Table with Copilot
 
-Once you have your credentials, follow these steps to provision your database:
+Now that your container is ready, let's build the table where your data will live. In 2026, we can use **Copilot** to speed up the creation process and generate realistic sample data instantly.
 
-1.  Navigate to the [Power Platform Admin Center](admin.powerplatform.microsoft.com).
-2.  Select **Environments** from the left-side menu and click **+ New**.
-3.  **Choose Type:** Select **Developer** (for personal learning).
-4.  **Add Database:** Ensure you toggle **"Add a Dataverse data store"** to **Yes**. 
-5.  **Configure:** Choose your preferred language and currency, then click **Save**.
+1.  Click to open your new created solution from the list.
+2.  Click **+ New** > **Table** > **Table**.
+3.  Click on **Start with Copilot**.
+4.  In the Copilot chat box, type the following prompt:
+    > "Create a table for Countries. I need a primary column for the Country Name. Also, add sample data for 5 major countries including their names."
+5.  **Review the AI Suggestion:**
+    *   Copilot will show you a preview of the table structure.
+    *   Verify that the **Display Name** is `Country`.
+    *   Look at the side panel to ensure the **Schema Name** uses your custom prefix (e.g., `jane_Country`).
+6.  **Generate Sample Data:**
+    *   In the chat box, type: `Add 5 more rows of sample data with varied country names.`
+    *   You will see the grid update with real-world examples like *Japan, Brazil, and France*.
+7.  **Finalize:**
+    *   Click the **Save and exit** button in the top right corner.
+    *   Dataverse will now provision the table and automatically insert the rows generated by Copilot.
 
-### Environment Types Comparison
-| Type       | Best For                               | Expiration                  |
+### 💡 Why use Copilot for Data Modeling?
+| Feature    | Benefit                               | Expiration                  |
 |------------|----------------------------------------|------------------------------|
-| Developer  | Individual learning                    | Renewable (with activity)    |
+| Natural Language  | Individual learning                    | Renewable (with activity)    |
 | Sandbox    | Team testing & "Reset" features        | None (uses tenant capacity)  |
 | Trial      | Short-term 30-day testing               | 30 Days                      |
 | Teams      | Basic Dataverse within MS Teams         | Linked to Team lifecycle     |
 
-## 🧬 Part 4: Fork and Clone the Workshop Repository
+## ✅ Summary & Next Steps
 
-*Now let’s fork the repository and clone it locally so you can work with lab files in your own environment.*
+You have now successfully:
+*   Created a **Solution** to house your work.
+*   Set up a **Publisher** with your unique name as a **Prefix**.
+*   Used **Copilot** to build the **Country** table and populate it with sample data.
 
-1. Open the **Workshop Repo** in your new Browser Profile: `github.com`
-2. Click the **Fork** button in the top right corner to create a copy in your own GitHub account.
-3. Click the green **<> Code** button and copy the **HTTPS URL**.
-4. Open your terminal (PowerShell or Bash) and run:
-   ```bash
-   # Navigate to your folder
-   cd c:\workshops
-   
-   # Clone the repo
-   git clone <YOUR_COPIED_URL>
-   
-   # Open in VS Code
-   code dataverse-beginner-workshop
+*In the next lab, we will manually add more specific columns (Population, Continent) to learn how to refine our AI-generated table!*
+Verwende Code mit Vorsicht.
