@@ -75,5 +75,3 @@ You have successfully:
 *   Designed a professional **Model-Driven App**.
 *   Secured your data with **Role-Based Access Control (RBAC)**.
 *   **Grounded a Custom AI Agent** in your business data.
-
-**Next Steps:** You are now ready to explore [Power Automate](https://make.powerautomate.com) to create workflows, such as sending an email alert whenever a new Country is added to your database!
