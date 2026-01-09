@@ -75,4 +75,4 @@ You have now successfully:
 *   Set up a **Publisher** with your unique name as a **Prefix**.
 *   Used **Copilot** to build the **Country** table and populate it with sample data.
 
-*In the next lab, we will manually add more specific columns (Population, Continent) to learn how to refine our AI-generated table!*
+*In the next lab, we will manually add more specific columns (Population, Description) to learn how to refine our AI-generated table!*
