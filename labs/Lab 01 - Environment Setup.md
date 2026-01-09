@@ -10,8 +10,6 @@ This lab consists of four parts:
 
 🏗️ **Environment Creation**: Building your Dataverse database.
 
-🧬 **Repo Preparation**: Forking the workshop materials.
-
 ---
 
 ## 🧼 Part 1: Create a "Clean Room" Browser Profile
@@ -59,48 +57,13 @@ This is the standard for learners. It does not expire as long as you are active.
 6.  Once the setup wizard completes, you will be redirected to the Power Apps Maker Portal. Look at the **Environment Picker** in the top-right corner. Confirm that an environment named **[Your Name]'s Environment** (Type: Developer) is selected.
 
 
-### 2. Microsoft 365 Developer Program (Alternative)
-*Use this if you do not have a corporate/school email. These steps create a private "Sandbox" tenant. This will give you a professional identity to use for the rest of the workshop.*
-*   **Benefits:** Provides a free, renewable Microsoft 365 E5 sandbox with 25 licenses.
-*   **How to get it:** Register at the [Microsoft 365 Developer Center]([developer.microsoft.com](https://developer.microsoft.com/en-us/microsoft-365/dev-program)). Use this new identity to then sign up for the Developer Plan above.
+### 2. Training envrionment for today (Alternative)
+*Use this only if you can't craete an own training environment.*
 
-1. Open your **Workshop Browser Profile**.
-2. Navigate to the [Microsoft 365 Developer Center]([developer.microsoft.com](https://developer.microsoft.com/en-us/microsoft-365/dev-program)).
-3. Click **Join now**.
-4. Sign in with a personal Microsoft account (e.g., @outlook.com, @hotmail.com). If you don't have one, create one at https://outlook.live.com/
-5. Select your **Country/Region** and your **Company** (you can use "Personal" or your name). Note: Be aware that **some Copilot related features might not be avaialbe in your region**. To get all the latest features, please select **US** as your region.
-6. Choose as primary language **English** and click **Next**.
-7. When prompted, select **Configurable Sandbox** (this allows you to choose your own domain name).
-8. Click **Next**.
-9. **Username:** Choose an admin name (e.g., `admin`).
-10. **Domain:** Choose a unique name (e.g., `dataverseworkshop2026`). 
-   > Your final email will look like: `admin@dataverseworkshop2026.onmicrosoft.com`.
-11. **Password:** Set a strong password and **save it securely**.
-12. Provide a mobile phone number for security verification and enter the code you receive.
-13. Once your dashboard says "Subscription: Active," copy your new **@onmicrosoft.com** email address.
-14. Go to [Power Apps Developer Plan website](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing)
-15. Locate the "Get started for free" or "Existing User? Add a developer environment" button.
-<img width="475" height="400" alt="image" src="https://github.com/user-attachments/assets/49d8554b-ca53-403e-b084-36d5b2a396cd" />
-
-16.  Enter your Work or School email address (or your Microsoft 365 Developer Program email).
-
-### ⚠️ Note
-> Personal emails like @outlook.com or @gmail.com are not supported for this plan.
-
-<img width="431" height="500" alt="image" src="https://github.com/user-attachments/assets/50f62a2a-0186-47ff-b567-3ca6a10c0081" />
-
-17.  If prompted, sign in with your Microsoft 365 account credentials.
-18.  Select your Country/Region and click Accept to agree to the terms and conditions. Note: 
-
-### ⚠️ Note
-> Be aware that **some Copilot related features might not be avaialbe in your region**. To get all the latest features, please select **US** as your region.
-
-19.  Once the setup wizard completes, you will be redirected to the Power Apps Maker Portal. Look at the **Environment Picker** in the top-right corner. Confirm that an environment named **[Your Name]'s Environment** (Type: Developer) is selected.
-
----
-
-### ⚠️ Important Note for 2026
-> **Keep it active:** Microsoft detects "development activity." To ensure your sandbox is renewed, make sure to commit at least one change to a Power App or Dataverse table once every 60-90 days.
+1. Go to [Account Overview](https://zumpad.zum.de/p/Dataverse_Workshop)
+2. Select an account, and leave your name there. This ensures that the account is taken by you and no one else takes it accidentally.
+3. Login with the account at [Power Apps Maker Portal](https://make.powerapps.com).
+   >Note: Password will be provided during the training.
 
 ***
 
@@ -110,6 +73,8 @@ This is the standard for learners. It does not expire as long as you are active.
 ---
 
 ## 🏗️ Part 3: Create Your Dataverse Environment
+
+*Only do this if you have created your own training environment with the Power Platform Developer Plan!*
 
 Once you have your credentials, follow these steps to provision your database:
 
@@ -127,23 +92,7 @@ Once you have your credentials, follow these steps to provision your database:
 | Trial      | Short-term 30-day testing               | 30 Days                      |
 | Teams      | Basic Dataverse within MS Teams         | Linked to Team lifecycle     |
 
-## 🧬 Part 4: Fork and Clone the Workshop Repository
 
-*Now let’s fork the repository and clone it locally so you can work with lab files in your own environment.*
-
-1. Open the **Workshop Repo** in your new Browser Profile: `github.com`
-2. Click the **Fork** button in the top right corner to create a copy in your own GitHub account.
-3. Click the green **<> Code** button and copy the **HTTPS URL**.
-4. Open your terminal (PowerShell or Bash) and run:
-   ```bash
-   # Navigate to your folder
-   cd c:\workshops
-   
-   # Clone the repo
-   git clone <YOUR_COPIED_URL>
-   
-   # Open in VS Code
-   code dataverse-beginner-workshop
 
 ---
 
