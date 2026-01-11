@@ -67,8 +67,6 @@ Now, let's see if the AI can truly understand your custom data.
 
 ## ✅ Final Workshop Summary
 
-Congratulations! You have completed the **2026 Dataverse Beginner Training**. 
-
 You have successfully:
 *   Built a **Relational Data Model** from scratch.
 *   Automated data entry with **AI Copilot**.
