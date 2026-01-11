@@ -84,13 +84,12 @@ Once you have your credentials, follow these steps to provision your database:
 4.  **Add Database:** Ensure you toggle **"Add a Dataverse data store"** to **Yes**. 
 5.  **Configure:** Choose your preferred language and currency, then click **Save**.
 
-### Environment Types Comparison
+### Environment Types Comparison (amongst others)
 | Type       | Best For                               | Expiration                  |
 |------------|----------------------------------------|------------------------------|
 | Developer  | Individual learning                    | Renewable (with activity)    |
 | Sandbox    | Team testing & "Reset" features        | None (uses tenant capacity)  |
 | Trial      | Short-term 30-day testing               | 30 Days                      |
-| Teams      | Basic Dataverse within MS Teams         | Linked to Team lifecycle     |
 
 
 
