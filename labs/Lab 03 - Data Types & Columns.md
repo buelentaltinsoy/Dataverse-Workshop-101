@@ -45,7 +45,7 @@ When building professional apps in 2026, choosing the right "container" for your
 
  Data Type       | Best Used For...                                           | Example Text (String)                     |
 |-----------------|-----------------------------------------------------------|------------------------------------------|
-| Names, descriptions, addresses, or any alphanumeric notes. | "France is in Europe"                                  |
+| Text            | Names, descriptions, addresses, or any alphanumeric notes. | "France is in Europe"                                  |
 | Whole Number    | Quantities, counts, or IDs where decimals aren't needed.  | 67,000,000                                |
 | Decimal/Float   | Precise measurements or scientific data.                  | 9.81 (Gravity)                            |
 | Currency        | Financial values (automatically handles exchange rates).  | $500.00                                   |
