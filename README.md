@@ -8,9 +8,9 @@ This workshop is designed to take you from a Dataverse novice to a confident bui
 
 ## 🌟 Proudly Featured at M365 Con
 
-We are excited to share that the concepts in this workshop are inspired by the latest innovations presented at **[M365 Con](https://www.m365con.net)**, the world's largest virtual conference dedicated to Microsoft 365 and the Power Platform. 
+We are excited to share this knowledge at **[M365 Con](https://www.m365con.net)**, the world's largest virtual conference dedicated to Microsoft 365 and the Power Platform. 
 
-M365 Con brings together thousands of experts, Microsoft product makers, and community leaders to showcase the future of work. From **AI-driven agents** to **sophisticated data modeling**, M365 Con is your front-row seat to the evolving Microsoft ecosystem. If you want to stay ahead of the curve, make sure to check out their upcoming events and resources!
+M365 Con brings together over 70 experts, Microsoft product makers, and community leaders to showcase the future of work. From **AI-driven agents** to **sophisticated data modeling**, M365 Con is your front-row seat to the evolving Microsoft ecosystem. If you want to stay ahead of the curve, make sure to check out their upcoming events and resources!
 
 ---
 
