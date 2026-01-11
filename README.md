@@ -1,4 +1,4 @@
-# Welcome to the Dataverse Beginner Workshop! 🚀
+# Welcome to the Dataverse Beginner Workshop! 🥳
 
 *Master the core of the Power Platform in just 4 hours through intensive hands-on labs.*
 
