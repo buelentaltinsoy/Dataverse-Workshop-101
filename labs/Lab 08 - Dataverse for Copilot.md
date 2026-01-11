@@ -75,3 +75,5 @@ You have successfully:
 *   Designed a professional **Model-Driven App**.
 *   Secured your data with **Role-Based Access Control (RBAC)**.
 *   **Grounded a Custom AI Agent** in your business data.
+
+## 🏆 Congratulations! You have completed the Dataverse Fundamentals Workshop!
