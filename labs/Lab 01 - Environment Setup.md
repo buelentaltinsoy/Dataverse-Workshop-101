@@ -60,7 +60,7 @@ This is the standard for learners. It does not expire as long as you are active.
 ### 2. Training envrionment for today (Alternative)
 *Use this only if you can't craete an own training environment.*
 
-1. Go to [Account Overview](https://zumpad.zum.de/p/Dataverse_Workshop)
+1. Go to **LINK REMOVED**
 2. Select an account, and leave your name there. This ensures that the account is taken by you and no one else takes it accidentally.
 3. Login with the account at [Power Apps Maker Portal](https://make.powerapps.com).
    >Note: Password will be provided during the training.
